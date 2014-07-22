@@ -2,6 +2,8 @@
 
 echo "Installing ddclient for cloudflare"
 
+echo "Installing Pre-reqs"
+apt-get install perl libjson-any-perl libio-socket-ssl-perl
 
 echo "Copying files..."
 cp etc_rc.d_init.d_ddclient.ubuntu /etc/init.d/ddclient
