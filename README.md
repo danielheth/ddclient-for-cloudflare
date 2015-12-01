@@ -13,3 +13,10 @@ I wanted a few very simple installations to get things working, so here they are
 >$ sudo ./install.sh
 
 Then follow the prompts which will help you configure ddclient to work with your cloudflare account.
+
+## Troubleshooting
+ddclient logs to syslog... so using the following command can help you troubleshoot what's going on:
+
+>$ cat /var/log/syslog | grep ddclient
+
+Your configuration is saved to the /etc/ddclient/ddclient.conf file in case you need to make any changes.  It is locked down to root access.
