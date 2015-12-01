@@ -67,8 +67,8 @@ sub T_POSTS	{'postscript'};
 
 ## strategies for obtaining an ip address.
 my %builtinweb = (
-   'dyndns'       => { 'url' => 'http://checkip.dyndns.org/', 'skip' =>
-   'Current IP Address:', },
+   'moranit'      => { 'url' => 'http://content.moranit.com/ip.php', 'skip' => 'Current Address:', },
+   'dyndns'       => { 'url' => 'http://checkip.dyndns.org/', 'skip' => 'Current IP Address:', },
    'dnspark'      => { 'url' => 'http://ipdetect.dnspark.com/', 'skip' => 'Current Address:', },
    'loopia'       => { 'url' => 'http://dns.loopia.se/checkip/checkip.php', 'skip' => 'Current Address:', },
 );
